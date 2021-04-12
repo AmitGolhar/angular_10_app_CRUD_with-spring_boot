@@ -1,0 +1,129 @@
+.logo {
+  top: 130px;
+  left: 174px;
+  width: 158px;
+  height: 54px;
+  background: transparent url("../assets/images/filed-logo-01.png") 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
+}
+.header {
+  top: 264px;
+  left: 174px;
+  width: 224px;
+  height: auto;
+  font: var(--unnamed-font-style-normal) normal medium 44px /
+    var(--unnamed-line-spacing-65) var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal medium 44px/65px Roboto;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+.subheader {
+    top: 264px;
+    left: 174px;
+    width: 255px
+
+}
+.userform {
+  top: 213px;
+  left: 1081px;
+  width: 651px;
+  height: 724px;
+  background: var(--unnamed-color-fbfbfb) 0% 0% no-repeat padding-box;
+  background: #fbfbfb 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 20px #00000029;
+  border-radius: 30px;
+  opacity: 1;
+}
+.userform_page1{
+    top: 212px;
+left: 1081px;
+width: 651px;
+height: 724px;
+background: var(--unnamed-color-fbfbfb) 0% 0% no-repeat padding-box;
+background: #FBFBFB 0% 0% no-repeat padding-box;
+box-shadow: 0px 4px 20px #00000029;
+border-radius: 30px;
+opacity: 1;
+}
+.form1_heading{
+    position: relative;
+    top: 109.5px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    text-align: center;
+}
+.form1_info_msg{
+    text-align: center;
+    width: 370px;
+    position: relative;
+    top: 117px;
+    margin: 0 auto;
+}
+.question1{
+    text-align: left;
+    width: 369px;
+    position: relative;
+    top: 193px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+.choisebtn{
+     
+    width: 369px;
+    position: relative;
+    top: 250px;
+    margin: 0 auto;
+     
+}
+.yes_btn{
+    padding-right: 130px;
+}
+.yes, .no{
+    padding: 10px;
+}
+.budget_questation{
+    width: 369px;
+    position: relative;
+    top: 280px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+.dropdown_budget{
+    position: relative;
+    top: 300px;
+    left: 21%;
+}
+.get_started{
+    top: 383px;
+    left: 21%;
+    width: 408px;
+    height: 48px;
+    background: transparent linear-gradient(180deg, var(--unnamed-color-ff6e4e) 0%, var(--unnamed-color-ff6e4e) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #FF6E4E 0%, #FF6E4E 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #00000029;
+    opacity: 1;
+    position: relative;
+    border-radius: 6px;
+    border: none;
+    color: #ffffff;
+}
+.section2{
+    background: transparent url("../assets/images/Group392.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 100%;
+    height: 531px;
+background-size: contain;
+}
+.sec_2_para{
+    position: relative;
+    top: 25%;
+    left: 23%;
+    text-align: left;
+    font: normal normal normal 20px/43px Roboto;
+    letter-spacing: 0px;
+    color: #38CCF5;
+}

@@ -1,0 +1,153 @@
+<div class="container">
+  <button
+    type="button"
+    class="btn btn-primary"
+    style="margin-bottom: 10px"
+    data-toggle="modal"
+    data-target="#myModal"
+  >
+    Add New
+  </button>
+</div>
+
+<div class="container">
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of UserData">
+        <td>{{ user.id }}</td>
+        <td>{{ user.firstname }}</td>
+        <td>{{ user.lastname }}</td>
+        <td>
+          <button type="button" class="btn btn-secondary" style="margin-right: 15px" data-toggle="modal" data-target="#myModal2"  (click)="getByID(user.id)" >
+            Get By ID
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger"
+            style="margin-right: 15px"
+            (click)="deleteEmployee(user.id)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form #userData="ngForm" (ngSubmit)="addEmployee(userData.value)">
+          <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter first name"
+              name="firstname"
+              ngModel
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter last name"
+              name="lastname"
+              ngModel
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter email"
+              name="email"
+              ngModel
+            />
+          </div>
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter age"
+              name="age"
+              ngModel
+            />
+          </div>
+          <button
+            type="submit"
+            value="submit"
+            class="btn btn-primary"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal2">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Details</h4>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngIf="SingleUserData">
+              <td>{{ SingleUserData.id }}</td>
+              <td>{{ SingleUserData.firstname }}</td>
+              <td>{{ SingleUserData.lastname }}</td>
+              <td>{{ SingleUserData.email }}</td>
+              <td>{{ SingleUserData.age }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
